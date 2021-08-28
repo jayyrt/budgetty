@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Background from './../shared/Background/Background'
 import Chart1 from './../shared/Chart1';
 import Chart2 from './../shared/Chart2';
@@ -9,9 +10,9 @@ import Nav from './../shared/Nav';
 import './Budget.css';
 
 
-class Budget extends Component {
-
+class Budget extends Component{
   render() {
+    const { loading } = this.props.budget;
     return (
       <Background>
         {true ? <Loading /> : null}
@@ -33,4 +34,10 @@ class Budget extends Component {
   }
 }
 
-export default Budget;
+const mapStateToProps = (state) => {
+  return {
+    budget: state.budget
+  }
+}
+
+export default connect(mapStateToProps)(Budget);

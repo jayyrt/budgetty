@@ -62,7 +62,7 @@ Now we'll create the store.
     budget: budgetReducer
   })
   ```
-* export as default the created store using `createStore`. The first argument to the createStore function should be `rootReducer`. The second argument should be `applyMiddleware(promiseMiddlware)`
+* export as default the created store using `createStore`. The first argument to the createStore function should be `rootReducer`. The second argument should be `applyMiddleware(promiseMiddleware)`
 
 
 Now we can go connect the redux part of our app to the react part.
