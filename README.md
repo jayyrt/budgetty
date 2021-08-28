@@ -482,7 +482,7 @@ In budgetReducer.js:
 
 * import axios from 'axios'
 * Create action type called `REQUEST_BUDGET_DATA`
-* Create an action creator named `requestBudgetData` that makes a get request for budget data, returns the data from the response, and stores that data to a variable named `data`.
+* Create an action creator named `requestBudgetData` that makes a get request for budget data, returns the data from the  response, and stores that data to a variable named `data`.
   * Method: `GET`
   * URL: `/api/budget-data`
   * Make sure you return `res.data` from the callback passed into the `.then` of your get request
